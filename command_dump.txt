@@ -1,0 +1,4 @@
+# Build and up the container
+
+docker build -t moptest .
+docker run --name moptest_container moptest
