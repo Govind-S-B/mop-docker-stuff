@@ -1,4 +1,10 @@
 # Build and up the container
 
-docker build -t moptest .
-docker run --name moptest_container moptest
+docker build -t violetto96/moptest .
+docker push violetto96/moptest
+
+docker pull violetto96/moptest
+
+docker run --name moptest_container -p 8000:8000 violetto96/moptest
+
+docker exec -it moptest_container sh
