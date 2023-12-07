@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: api-server
+  namespace: mop
 spec:
   replicas: 3
   selector:
@@ -17,3 +18,5 @@ spec:
         image: violetto96/moptest
         ports:
         - containerPort: 8000
+      imagePullSecrets:
+      - name: regcreddockerhub
