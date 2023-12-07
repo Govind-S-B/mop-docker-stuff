@@ -1,0 +1,82 @@
+ 
+  550  docker images
+  551  docker pull violetto96/moptest
+  552  docker run --name moptest_container -p 8000:8000 violetto96/moptest
+  554  docker rm moptest_container
+  556  docker ps --all
+
+  559  kubectl apply -f api-server-deployment.yaml 
+  560  kubectl apply -f api-loadbalancer-service.yaml 
+  561  kubectl get deployments
+  562  kubectl get services
+  563  minikube
+  564  sudo apt install minikube
+  565  kubectl get deployments
+  570  kubectl get services
+  572  kubectl get pods --all-namespaces
+  573  kubectl apply -f api-loadbalancer-service.yaml 
+  574  kubectl delete -f api-server-deployment.yaml 
+  576  kubectl get pods
+  577  kubectl get pods --all-namespaces
+  578  kubectl apply -f api-server-deployment.yaml 
+  579  kubectl apply -f mop-namespace.yaml 
+  580  kubectl apply -f api-server-deployment.yaml 
+  581  kubectl get pods --all-namespaces
+  582  kubectl get pods -n mop
+  583  kubectl logs
+  584* kubectl logs -n mop api-server-54b697d946-c4lms 
+  585  kubectl desc pod api-server-54b697d946-c4lms 
+  586  kubectl describe pod api-server-54b697d946-c4lms 
+  587  kubectl describe pod api-server-54b697d946-c4lms -n mop
+  605  kubectl create secret docker-registry regcreddockerhub --docker-server=https://index.docker.io/v1/ --docker-username=violetto96 --docker-password=PASSWORD --docker-email=b.s.dnivog@gmail.com
+  606  kubectl get secret regcreddockerhub
+  607  kubectl get secret regcreddockerhub --output=yaml
+  608  kubectl delete secret regcreddockerhub
+  610  cd /home/vio/mop-docker-stuff/
+  611  kubectl apply -f registry-secret.yaml 
+  612  kubectl get secret regcreddockerhub
+  613  kubectl get secret regcreddockerhub -n mop
+  614  kubectl apply -f api-server-deployment.yaml 
+  615  kubectl get pod
+  616  kubectl get pod -n mop
+  617  kubectl get logs -n mop
+  618  kubectl logs -n mop
+  619  kubectl logs -n mop api-server-84d9bc9cb9-d2gk8
+  620  kubetcl apply -f api-loadbalancer-service.yaml 
+  621  kubectl apply -f api-loadbalancer-service.yaml 
+  624  kubectl get pods
+  625  kubectl get pods -n mops
+  626  kubectl get pods -n mop
+  627  kubectl get services -n mop
+  628  kubectl apply -f api-loadbalancer-service.yaml 
+  630  kubectl create namespace caddy-system
+  631  helm install   --namespace=caddy-system   --repo https://caddyserver.github.io/ingress/   --atomic   mycaddy   caddy-ingress-controller
+  632  sudo apt install helm
+  633  snap install helm
+  634  sudo snap install helm
+  635* kubectl get pod --
+  636  helm install   --namespace=caddy-system   --repo https://caddyserver.github.io/ingress/   --atomic   mycaddy   caddy-ingress-controller
+  637  kubectl get pods --all-namespaces
+  638  kubectl get services
+  639  kubectl delete service api-server
+  640  kubectl apply -f api-loadbalancer-service.yaml 
+  641  kubectl get services
+  642  kubectl apply -f api-loadbalancer-service.yaml 
+  643  kubectl get services -n mop
+  644  kubectl apply -f mop-ingress.yaml 
+  645  helm delete   --namespace=caddy-system   --repo https://caddyserver.github.io/ingress/   --atomic   mycaddy   caddy-ingress-controller
+  646  kubectl get pods --all-namespaces
+  647  helm delete   --namespace=caddy-system   caddy-ingress-controller
+  648  helm delete caddy-ingress-controller
+  649  helm delete   --namespace=caddy-system  
+  650  helm uninstall   --namespace=caddy-system   --repo https://caddyserver.github.io/ingress/   --atomic   mycaddy   caddy-ingress-controller
+  651  helm uninstall   --namespace=caddy-system  --atomic   mycaddy   caddy-ingress-controller
+  652  helm uninstall   --namespace=caddy-system   caddy-ingress-controller
+  654  kubectl get pods --all-namespaces
+  656  kubectl get deployments -n caddy-system
+  657  kubectl delete deployments -n caddy-system
+  658  kubectl delete deployments -n caddy-system mycaddy-caddy-ingress-controller
+  659  kubectl apply -f mop-ingress.yaml 
+  660  kubectl get services -n mop
+  661  kubectl get Ingress -n mop
+  688  history > ./file.txt

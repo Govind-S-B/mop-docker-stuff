@@ -8,3 +8,8 @@ docker pull violetto96/moptest
 docker run --name moptest_container -p 8000:8000 violetto96/moptest
 
 docker exec -it moptest_container sh
+
+MAKE SURE THE IMAGE IN REGISTRY IS PRIVATE
+TO DO : Migrate to a different registry like canister
+
+STEP 1 : Local Simple Deployment
