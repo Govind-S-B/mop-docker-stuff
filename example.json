@@ -1,0 +1,56 @@
+{
+  "hasError": false,
+  "statusCode": 200,
+  "message": { "general": [] },
+  "response": {
+    "id": "a822b789-ac57-4f0c-9742-269e49d6ec25",
+    "joined": "2022-01-09T14:51:34Z",
+    "first_name": "vishakh",
+    "last_name": "abhayan",
+    "gender": null,
+    "muid": "vishakhabhayan@mulearn",
+    "roles": [
+      "Student",
+      "Discord Moderator",
+      "Tech Team",
+      "Top 100 Aspirant",
+      "Intern",
+      "Code Explorer"
+    ],
+    "college_id": "6ba66375-3ab5-4623-8017-63a46fb2e1c3",
+    "college_code": "GPCK",
+    "org_district_id": "67a589dd-6b92-4536-9e87-d9c8be71d1d0",
+    "karma": 17078,
+    "rank": 25,
+    "karma_distribution": [
+      { "task_type": "Collaboration", "karma": 2884 },
+      { "task_type": "IGLU", "karma": 7105 },
+      { "task_type": "Extra", "karma": 49 },
+      { "task_type": "Profile Building", "karma": 400 },
+      { "task_type": "Contribution", "karma": 4800 },
+      { "task_type": "General Enablement", "karma": 1790 },
+      { "task_type": "Participation", "karma": 50 }
+    ],
+    "level": "lvl4",
+    "profile_pic": "https://mulearn.org/muback-media/user/profile/a822b789-ac57-4f0c-9742-269e49d6ec25.png",
+    "interest_groups": [
+      {
+        "id": "9b8aaf7f-16a0-4a66-ae53-79b8c25e5faa",
+        "name": "Web Development",
+        "karma": 4750
+      },
+      {
+        "id": "3a74725e-a05a-418b-a275-39d68ad9a416",
+        "name": "Cyber Security",
+        "karma": 0
+      },
+      {
+        "id": "85130a05-7dc8-4888-a486-e3e50eafc75c",
+        "name": "Blockchain",
+        "karma": 0
+      }
+    ],
+    "is_public": true,
+    "percentile": 99.89383511495095
+  }
+}
